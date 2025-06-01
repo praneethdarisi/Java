@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class BasicConcepts {
+    public static void main(String[] args) {
+        // 1. Hello World
+        System.out.println("Hello World");
+
+        // 2. Data Types and Variables
+        int myInt = 10;
+        double myDouble = 20.5;
+        char myChar = 'A';
+        boolean myBool = true;
+
+        // 3. Input in Java
+        Scanner scanner = new Scanner(System.in);
+
+        // Asking user for two integers
+        System.out.print("Enter first integer: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter second integer: ");
+        int num2 = scanner.nextInt();
+
+        // 4. Variables and Operators
+        int sum = num1 + num2;       // addition
+        int diff = num1 - num2;      // subtraction
+        int product = num1 * num2;   // multiplication
+        double division = (double) num1 / num2;  // division (typecast for decimal result)
+        int remainder = num1 % num2; // modulus
+
+        // Output results
+        System.out.println("You entered: " + num1 + " and " + num2);
+        System.out.println("Sum = " + sum);
+        System.out.println("Difference = " + diff);
+        System.out.println("Product = " + product);
+        System.out.println("Division = " + division);
+        System.out.println("Remainder = " + remainder);
+
+        // Display previously declared variables of different data types
+        System.out.println("Example Data Types:");
+        System.out.println("Integer: " + myInt);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Character: " + myChar);
+        System.out.println("Boolean: " + myBool);
+
+        scanner.close();
+    }
+}
